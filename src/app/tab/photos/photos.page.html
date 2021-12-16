@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Photo Gallery</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img [src]="photoService.photo" style="width: 50%;"/>
+
+  <ion-fab slot="fixed" horizontal="center" vertical="bottom">
+    <ion-fab-button (click)="takePhoto()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
